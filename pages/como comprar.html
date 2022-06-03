@@ -13,13 +13,24 @@
 
 <body>
 
-    <section class="primerSeccion">
+    <section class="bg-info bg-gradient">
         <nav class="menu">
-            <ul>
-                <li>Home</li>
-                <li>Carrito</li>
-                <li>Guardado</li>
-                <li>Buscar</li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Guardado</a>
+                </li>
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </li>
             </ul>
         </nav>
         <header class="encabezado">
@@ -36,14 +47,14 @@
         </header>
         <nav class="menuPrincipal">
             <ul class="menuprincipal">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/productos.html" target="_blank">Productos</a></li>
+                <li class="rounded-pill"><a href="../index.html">Inicio</a></li>
+                <li class="rounded-pill"><a href="../pages/productos.html" target="_blank">Productos</a></li>
                 <!-- <li> <a href="../pages/marcas.html" target="blank">Marcas</a></li> -->
                 <!-- <li> <a href="../pages/hombre.html" target="blank">Hombre</a></li> -->
                 <!-- <li> <a href="../pages/mujer.html" target="blank">Mujer</a></li> -->
-                <li> <a href="../pages/como comprar.html" target="blank">Como comprar</a></li>
-                <li> <a href="../pages/quienes somos.html" target="blank">Quienes somos</a></li>
-                <li> <a href="../pages/contacto.html" target="blank">Contacto</a></li>
+                <li class="rounded-pill"> <a href="../pages/como comprar.html" target="blank">Como comprar</a></li>
+                <li class="rounded-pill"> <a href="../pages/quienes somos.html" target="blank">Quienes somos</a></li>
+                <li class="rounded-pill"> <a href="../pages/contacto.html" target="blank">Contacto</a></li>
             </ul>
         </nav>
     </section>
@@ -77,7 +88,7 @@
         </div>
     </main>
 
-    <footer class="footer">
+    <footer class="footer bg-info bg-gradient">
         <div class="pagos">
             <h4>Medios de pago</h4>
             <div class="iconos">

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logo_size_invert.jpg">
     <title>Contacto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -15,11 +16,22 @@
 
     <section class="bg-info bg-gradient">
         <nav class="menu">
-            <ul>
-                <li>Home</li>
-                <li>Carrito</li>
-                <li>Guardado</li>
-                <li>Buscar</li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Guardado</a>
+                </li>
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </li>
             </ul>
         </nav>
         <header class="encabezado">
@@ -36,64 +48,95 @@
         </header>
         <nav class="menuPrincipal">
             <ul class="menuprincipal">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/productos.html" target="_blank">Productos</a></li>
+                <li class="rounded-pill"><a href="../index.html">Inicio</a></li>
+                <li class="rounded-pill"><a href="../pages/productos.html" target="_blank">Productos</a></li>
                 <!-- <li> <a href="../pages/marcas.html" target="blank">Marcas</a></li>
                 <li> <a href="../pages/hombre.html" target="blank">Hombre</a></li>
                 <li> <a href="../pages/mujer.html" target="blank">Mujer</a></li> -->
-                <li> <a href="../pages/como comprar.html" target="blank">Como comprar</a></li>
-                <li> <a href="../pages/quienes somos.html" target="blank">Quienes somos</a></li>
-                <li> <a href="../pages/contacto.html" target="blank">Contacto</a></li>
+                <li class="rounded-pill"> <a href="../pages/como comprar.html" target="blank">Como comprar</a></li>
+                <li class="rounded-pill"> <a href="../pages/quienes somos.html" target="blank">Quienes somos</a></li>
+                <li class="rounded-pill"> <a href="../pages/contacto.html" target="blank">Contacto</a></li>
             </ul>
         </nav>
     </section>
 
-    <main class="contacto ">
+    <main class="contacto">
         <h3>Contactanos!</h3>
         <p>Completa el siguiente formulario: </p>
-
+        <legend>Datos personales</legend>
         <form action="" method="get">
-            <fieldset class="contacto1">
-                <legend >Datos personales</legend>
-                <label class="contactoItem" for="Nombre">Nombre</label>
-                <input class="contactoItem" type="text" name="nombre" id="nombre" placeholder="Jose">
-                <label class="contactoItem" for="apellido">Apellido</label>
-                <input class="contactoItem" type="text" name="apellido" id="apellido" placeholder="Fernandez">
-                <label class="contactoItem" for="edad">Edad</label>
-                <input class="contactoItem" type="number" name="edad" id="edad" placeholder="20" min="0" max="100">
+            <fieldset class="contacto1 ">
 
-                <select class="contactoItem" name="Sexo" id="sexo">
-                    <option value="Masculino">Masculino</option>
-                    <option value="Femenino">Femenino</option>
-                </select>
+                <div class="input-group input-group mb-3">
+                    <span class="input-group-text id=" inputGroup-sizing-default"">Nombre y apellido</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                </div>
 
-                <p class="contactoItem"><label for="email">Email</label> <input type="email" name="email" id="email"
-                        placeholder="jfernandez@gmail.com"> </p>
+
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Edad</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Elige una opcion.</option>
+                        <option value="1">0 a 21 años</option>
+                        <option value="2">22 a 45 años</option>
+                        <option value="3">46 a 99 años</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Sexo</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Elige una opcion.</option>
+                        <option value="1">Femenino</option>
+                        <option value="2">Masculino</option>
+
+                    </select>
+                </div>
+
+                <p class="contactoItem"><label for="email">Email</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </p>
             </fieldset>
 
             <div class="comentarios">
-                <textarea name="comentario" id="comentario" cols="30" rows="10"
-                placeholder="Ingresa tu cometario."></textarea>
-            <div>
-                <label for="ckeckboletin">Suscrbirme al Newsletter</label>
-            <input type="checkbox" name="boletin" id="checkboletin">
-            </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Dejanos tu comentario!</label>
+                </div>
+                <div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate">
+                            Suscribirme al newsletter!
+                        </label>
+                    </div>
+                </div>
             </div>
 
             <fieldset class="terminos">
                 <legend>Terminos y condiciones</legend>
 
-                <input type="radio" name="terminos y condiciones" id="acepta" value="si">
-                <label for="acepta">Acepto terminos y condiciones.</label> <br>
+                <input class="form-check-input" type="radio" name="terminos y condiciones" id="acepta" value="si">
+                <label class="form-check-label" for="acepta">Acepto terminos y condiciones.</label> <br>
 
-                <input type="radio" name="terminos y condiciones" id="no acepta" value="no">
-                <label for="no acepta">No acepto terminos y condiciones</label> <br>
+                <input class="form-check-input" type="radio" name="terminos y condiciones" id="no acepta" value="no">
+                <label class="form-check-label" for="no acepta">No acepto terminos y condiciones</label> <br>
 
             </fieldset>
 
             <div class="inputs">
-                <input type="reset" value="Limpiar">
-            <input type="submit" value="Enviar">
+                <div class="col-12">
+                    <button class="btn btn-primary" type="reset">Limpiar</button>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
             </div>
         </form>
     </main>
@@ -132,7 +175,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 

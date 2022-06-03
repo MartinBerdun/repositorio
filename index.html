@@ -13,7 +13,7 @@
     
 </head>
 
-<body class="container-fluid">
+<body class="container-fluid bg-warning">
     <!-- CONTIENE EL HEADER -->
     <section class="bg-info bg-gradient">
         <div class="oferta">
@@ -24,11 +24,22 @@
             </div>
         </div>
         <nav class="menu">
-            <ul>
-                <li>Home</li>
-                <li>Carrito</li>
-                <li>Guardado</li>
-                <li>Buscar</li>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Guardado</a>
+                </li>
+                <li class="nav-item">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </li>
             </ul>
         </nav>
 
@@ -45,15 +56,15 @@
             </div>
         </header>
         <nav class="menuPrincipal">
-            <ul class="menuprincipal">
-                <li><a href="./index.html">Inicio</a></li>
+            <ul class="menuprincipal ">
+                <li class="rounded-pill"><a href="./index.html">Inicio</a></li>
                 <!-- <li> <a href="./pages/marcas.html" target="blank">Marcas</a></li> -->
-                <li><a href="./pages/productos.html" target="_blank">Productos</a></li>
+                <li class="rounded-pill"><a href="./pages/productos.html" target="_blank">Productos</a></li>
                 <!-- <li> <a href="./pages/hombre.html" target="blank">Hombre</a></li> -->
                 <!-- <li> <a href="./pages/mujer.html" target="blank">Mujer</a></li> -->
-                <li> <a href="./pages/como comprar.html" target="blank">Como comprar</a></li>
-                <li> <a href="./pages/quienes somos.html" target="blank">Quienes somos</a></li>
-                <li> <a href="./pages/contacto.html" target="blank">Contacto</a></li>
+                <li class="rounded-pill"> <a href="./pages/como comprar.html" target="blank">Como comprar</a></li>
+                <li class="rounded-pill"> <a href="./pages/quienes somos.html" target="blank">Quienes somos</a></li>
+                <li class="rounded-pill"> <a href="./pages/contacto.html" target="blank">Contacto</a></li>
             </ul>
         </nav>
     </section>
@@ -61,7 +72,7 @@
     <section>
         <div class="slider">
             <ul>
-                <li><img src="./img/banneradidas2.png" alt="adidas"></li>
+                <li ><img  src="./img/banneradidas2.png" alt="adidas"></li>
                 <li><img src="./img/bannernike.webp" alt="nike"></li>
                 <li><img src="./img/bannertommy.webp" alt="tommy"></li>
             </ul>
@@ -74,17 +85,17 @@
 
         <div class="fotos">
             <div>
-                <a href="./pages/productos.html"><img class="foto" src="./img/nike.jpg" alt="Nike"></a>
+                <a href="./pages/productos.html"><img class="foto shadow-lg p-3 mb-5 bg-body rounded img-fluid" src="./img/nike.jpg" alt="Nike"></a>
                 <p>Nike</p>
             </div>
 
             <div>
-                <a href="./pages/productos.html"><img class="foto" src="./img/adidas.jpg" alt="Adidas"></a>
+                <a href="./pages/productos.html"><img class="foto img-fluid" src="./img/adidas.jpg" alt="Adidas"></a>
                 <p>Adidas</p>
             </div>
 
             <div>
-                <a href="./pages/productos.html"><img class="foto" src="./img/lacoste.jpg" alt="Lacoste"></a>
+                <a href="./pages/productos.html"><img class="foto img-fluid shadow-lg p-3 mb-5 bg-body rounded" src="./img/lacoste.jpg" alt="Lacoste"></a>
                 <p>Lacoste</p>
             </div>
         </div>
@@ -93,17 +104,17 @@
         <div class="fotos">
 
             <div>
-                <a href="./pages/productos.html"><img class="foto" src="./img/levi.png" alt="Levi"></a>
+                <a href="./pages/productos.html"><img class="foto img-fluid" src="./img/levi.png" alt="Levi"></a>
                 <p>Levi</p>
             </div>
 
             <div>
-                <a href="./pages/productos.html"><img class="foto" src="./img/tommy.jpg" alt="Tommy Hilfiger"></a>
+                <a href="./pages/productos.html"><img class="foto img-fluid shadow-lg p-3 mb-5 bg-body rounded" src="./img/tommy.jpg" alt="Tommy Hilfiger"></a>
                 <p>Tommy Hilfiger</p>
             </div>
 
             <div>
-                <a href="./pages/productos.html"><img class="foto" src="./img/zara.png" alt="Zara"></a>
+                <a href="./pages/productos.html"><img class="foto img-fluid" src="./img/zara.png" alt="Zara"></a>
                 <p>Zara</p>
             </div>
         </div>
