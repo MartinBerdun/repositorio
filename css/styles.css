@@ -43,6 +43,7 @@
 
 .primerSeccion {
     background-color: #C5DCE9;
+    background-image: linear-gradient(to bottom, white, #C4DCE9);
     width: auto;
     /* height:auto; */
     /* border:3px solid blue; */
@@ -77,6 +78,28 @@
 
 }
 
+.oferta {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto-Regular;
+    font-size: 1.5rem;
+
+}
+
+.oferta div {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: heartBeat;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
 /* menu que se encuentra arriba a la derecha */
 .menu {
     height: 40px;
@@ -93,6 +116,7 @@
     margin: 10px 10px 10px 10px;
     font-family: Roboto-Regular;
 }
+
 
 /* menu debajo del header */
 .menuPrincipal {
@@ -111,7 +135,17 @@
     padding: 10px;
     margin: 5px 5px 5px 5px;
     border: 2px solid #A9D3FF;
+    /* transition: all 2s; */
 }
+
+.menuprincipal :hover {
+
+    border-radius: 5px;
+    /* border-top: none;
+    border-left: none; */
+    background-image: linear-gradient(to left, white, #C4DCE9);
+}
+
 
 /* *****************sliderrr */
 .slider {
@@ -173,6 +207,16 @@
     justify-content: space-evenly;
     margin: 2%;
     object-fit: cover;
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+}
+
+.foto:hover {
+    border-radius: 30px;
+    box-shadow: 2px 2px 20px 20px rgba(240, 231, 216, 0.70);
 }
 
 .fotos p {
@@ -260,6 +304,7 @@ nav {
 
 footer {
     background-color: #C4DCE9;
+    background-image: linear-gradient(to bottom, white, #C4DCE9);
     font-family: Roboto-Regular;
     display: grid;
     grid-template-areas:
@@ -293,6 +338,10 @@ footer {
 
 .iconos img {
     padding: 10px;
+}
+
+.iconos img:hover {
+    transform: scale(1.25) translatey(-20px);
 }
 
 
