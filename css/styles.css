@@ -50,9 +50,9 @@
 }
 
 .encabezado {
-    /* background-color: #C5DCE9;
+    background-color: #C5DCE9;
     width:auto;
-    height:auto; */
+    height:auto;
     display: flex;
     flex-direction: row;
     /* border:3px solid red; */
