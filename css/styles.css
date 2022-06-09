@@ -42,20 +42,16 @@
 /*********************** PROPIEDADES DEL ENCABEZADO DE TODAS LAS PAGINAS  (header) del index*/
 
 .primerSeccion {
-    background-color: #C5DCE9;
+    background-color: #C4DCE9;
     background-image: linear-gradient(to bottom, white, #C4DCE9);
     width: auto;
-    /* height:auto; */
-    /* border:3px solid blue; */
 }
 
 .encabezado {
-    background-color: #C5DCE9;
     width:auto;
     height:auto;
     display: flex;
     flex-direction: row;
-    /* border:3px solid red; */
     justify-content: center;
     align-items: center;
 }
@@ -64,7 +60,7 @@
     color: #004E64;
     font-size: 400%;
     font-family: Cinzel;
-    margin-left: 70px;
+    margin-left: 20%;
 }
 
 .encabezado h2 {
