@@ -1,0 +1,53 @@
+@import "variables";
+
+footer {
+    background-image: linear-gradient(to bottom, white, $color-principal);
+    font-family: Roboto-Regular;
+    display: grid;
+    grid-template-areas:
+        "pagos redes"
+        "derechos derechos";
+
+        .pagos {
+            grid-area: pagos;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .iconoss img {
+                padding: 10px;
+
+                & :hover {
+                    transform: scale(1.25) translatey(-20px);
+                }
+            }
+        }
+
+        .redes {
+            grid-area: redes;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .iconos a {
+                padding: 10px;
+
+                & :hover {
+                    transform: scale(1.25) translatey(-20px);
+                }
+            }
+        }
+
+        .derechos {
+            background-color: #EFE9EC;
+            width: 100%;
+            /* margin: 10px; */
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            grid-area: derechos;
+        }
+
+
+
+}
