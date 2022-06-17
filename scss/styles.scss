@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-@import "mediaq";
 @import "footer";
 @import "variables";
 @import "header";
+@import "mixins";
 
 @font-face {
     /* una esta fuente es para el header*/
@@ -42,12 +42,12 @@
 }
 
 body {
-    background-color: #efe9ec;
+    background-color: map-get($map: $colores, $key:octavo);
     height: auto;
 
     nav {
         font-family: Roboto-Regular;
-    
+
     }
 
     a {
@@ -63,6 +63,20 @@ body {
         font-family: Roboto-Regular;
         text-align: left;
         line-height: 1.5;
+    }
+
+    .texto {
+        @include sizes (700px, 800px);
+        background-color: aqua;
+        font-style: italic;
+        text-align: justify;
+
+    }
+
+    .lista {
+        @extend .texto;
+        text-decoration: underline;
+        font-size: larger;
     }
 
     .slider {
@@ -146,7 +160,7 @@ body {
 @media screen and (max-width: 480px) {
 
     body {
-        width: auto;
+        width: 100%;
     }
 
     .primerSeccion {
@@ -168,7 +182,7 @@ body {
     }
 
     .encabezado h1 {
-        font-size: 200%;
+        font-size: 200px;
         margin-left: 5px;
     }
 
@@ -194,7 +208,9 @@ body {
     }
 
     footer {
+        width: auto;
         display: grid;
+        flex-direction: column;
         grid-template-areas: "pagos"
             "redes"
             "derechos";
