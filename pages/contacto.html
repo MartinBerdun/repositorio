@@ -17,25 +17,14 @@
 <body>
 
     <section class="primerSeccion">
-        <nav class="menu">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Carrito</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Guardado</a>
-                </li>
-                <li class="nav-item">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Busca tu producto" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
+            <nav class="menu">
+                <ul>
+                    <li> <a href="./index.html">Inicio</a></li>
+                    <li>Carrito</li>
+                    <li>Guardado</li>
+                    <li>Buscar</li>
+                </ul>
+            </nav>
         <header class="encabezado">
 
             <img class="logo" src="../img/logo_size_invert.jpg" alt="st marthin">
@@ -52,9 +41,9 @@
             <ul class="menuprincipal">
                 <li ><a href="../index.html">Inicio</a></li>
                 <li ><a href="../pages/productos.html" target="_blank">Productos</a></li>
-                <li > <a href="../pages/como comprar.html" target="blank">Como comprar</a></li>
-                <li > <a href="../pages/quienes somos.html" target="blank">Quienes somos</a></li>
-                <li > <a href="../pages/contacto.html" target="blank">Contacto</a></li>
+                <li > <a href="../pages/Preguntas frecuentes.html" target="_blank">Preguntas Frecuentes</a></li>
+                <li > <a href="../pages/quienes somos.html" target="_blank">Quienes somos</a></li>
+                <li > <a href="../pages/contacto.html" target="_blank">Contacto</a></li>
             </ul>
         </nav>
     </section>
@@ -66,16 +55,16 @@
             <fieldset class="contacto1 ">
 
                 <div class="input-group input-group mb-3">
-                    <span class="input-group-text id=" inputGroup-sizing-default"">Nombre y apellido</span>
+                    <span class="input-group-text caja id=" inputGroup-sizing-default"">Nombre y Apellido</span>
                     <input type="text" aria-label="First name" class="form-control">
                     <input type="text" aria-label="Last name" class="form-control">
                 </div>
 
 
                 <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">Edad</label>
+                    <label class="input-group-text caja" for="inputGroupSelect01">Edad</label>
                     <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Elige una opcion.</option>
+                        <option selected>Elige una opción</option>
                         <option value="1">0 a 21 años</option>
                         <option value="2">22 a 45 años</option>
                         <option value="3">46 a 99 años</option>
@@ -83,19 +72,19 @@
                 </div>
 
                 <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupSelect01">Sexo</label>
+                    <label class="input-group-text caja" for="inputGroupSelect01">Sexo</label>
                     <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Elige una opcion.</option>
+                        <option selected>Elige una opción</option>
                         <option value="1">Femenino</option>
                         <option value="2">Masculino</option>
 
                     </select>
                 </div>
 
-                <p class="contactoItem"><label for="email">Email</label>
+                <!-- <p class="contactoItem"><label for="email">Email</label> -->
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Username"
+                        <span class="input-group-text caja" id="basic-addon1">Email</span>
+                        <input type="text" class="form-control" placeholder="Ingresa tu email" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                 </p>
@@ -107,18 +96,10 @@
                         style="height: 100px"></textarea>
                     <label for="floatingTextarea2">Dejanos tu comentario!</label>
                 </div>
-                <div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                        <label class="form-check-label" for="flexCheckIndeterminate">
-                            Suscribirme al newsletter!
-                        </label>
-                    </div>
-                </div>
             </div>
 
             <fieldset class="terminos">
-                <legend>Terminos y condiciones</legend>
+                <legend>Términos y condiciones</legend>
 
                 <input class="form-check-input" type="radio" name="terminos y condiciones" id="acepta" value="si">
                 <label class="form-check-label" for="acepta">Acepto terminos y condiciones.</label> <br>
@@ -132,11 +113,8 @@
 
             <div class="inputs">
                 <div class="col-12">
-                    <button class="btn btn-primary" type="reset">Limpiar</button>
-                </div>
-                <br>
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
+                    <button class="btn" type="reset">Limpiar</button>
+                    <button class="btn" type="submit">Enviar</button>
                 </div>
             </div>
         </form>
@@ -147,7 +125,7 @@
     <footer>
         <div class="pagos">
             <h4>Medios de pago</h4>
-            <div class="iconos">
+            <div class="iconoss">
                 <img src="../img/visa.png" alt="visa">
                 <img src="../img/mastercard (1).png" alt="mastercard">
                 <img src="../img/mercadopago.png" alt="mercadopago">
@@ -161,10 +139,17 @@
                 <a href="https://www.instagram.com" target="blank"> <img src="../img/instagram32px.png"
                         alt="instagram"></a>
                 <a href="https://www.facebook.com" target="blank"><img src="../img/facebook32px.png" alt="facebook"></a>
-                <a href="https://www.whatsapp.com" target="blank"><img src="../img/whatsapp32px.png" alt="whatsapp"></a>
+                <!-- <a href="https://www.whatsapp.com" target="blank"><img src="./img/whatsapp32px.png" alt="whatsapp"></a> -->
                 <a href="https://twitter.com" target="blank"><img src="../img/twitter32px.png" alt="twitter"></a>
             </div>
         </div>
+
+        <div class="newslatter">
+            <p><h5>Suscribite al newsletter! </h5></p>
+            <input class="inputNews" type="email" placeholder="Ingresa tu email">
+            <button class="news" type="submit"> Suscribir </button>
+        </div>
+
 
 
         <div class="derechos">

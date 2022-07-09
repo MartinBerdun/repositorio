@@ -4,8 +4,8 @@
 
 
 .primerSeccion {
-    background-color: #C4DCE9;
-    background-image: linear-gradient(to bottom, white, $color-principal);
+    background-color: #bae2f6;
+    // background-image: linear-gradient(to bottom, white, $color-principal);
     width: auto;
 
     .encabezado {
@@ -38,6 +38,7 @@
         width: 100%;
         height: 50px;
         display: flex;
+        padding-top: 10px;
         justify-content: center;
         align-items: center;
         font-family: Roboto-Regular;
@@ -55,7 +56,7 @@
     }   
 
     .menu {
-        @extend .menuPrincipal;
+        // @extend .menuPrincipal;
         height: 40px;
         display: flex;
         justify-content: flex-end;
