@@ -77,8 +77,7 @@ body {
     }
 
     .boton {
-        width: 80px;
-        height: 80px;
+        @include sizes (80px,80px);
         position: fixed;
         bottom: 40px;
         right: 40px;
@@ -143,32 +142,6 @@ body {
         }
     }
 
-    // fotos del slider
-
-    .fotos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 2%;
-        object-fit: cover;
-
-        .foto {
-            width: 250px;
-            height: 250px;
-        }
-
-        .foto:hover {
-            border-radius: 30px;
-            box-shadow: 2px 2px 20px 20px rgba(240, 231, 216, 0.7);
-        }
-
-        p {
-            font-family: Roboto-Regular;
-            display: block;
-            text-align: center;
-        }
-    }
 
     .link {
         text-decoration: none;
@@ -186,10 +159,10 @@ body {
                 justify-content: center;
                 align-items: center;
                 background-color: #b1e2f4;
-                height: 80%;
                 margin-top: 20px;
-                width: 100%;
                 text-align: center;
+                @include sizes (100%,80%);
+
 
                 p {
                     padding-top: 15px;
@@ -213,6 +186,17 @@ body {
             .posi1 {
                 padding-left: 13%;
                 grid-area: posi1;
+
+                a {
+                    transition: all 5s;
+                }
+        
+                a :hover {
+                    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        
+                }
+
+
             }
 
             .posi2 {
@@ -222,33 +206,31 @@ body {
                 grid-template-areas:
                     "ofer2 ofer3"
                     "ofer4 ofer5";
-            }
 
-            .photo {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-    
-    
-                a {
-                    text-decoration: none;
-                    color: black;
+                .photo {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
                 }
-    
-    
+
                 h5 {
                     text-align: center;
                 }
-    
-    
+
                 h6 {
                     padding-top: 5px;
                     text-align: center;
                 }
             }
+
         }
-        
+
     }
 
     .posi4 {
@@ -260,8 +242,19 @@ body {
             "ofer9 ofer10"
             "ofer11 ofer12";
 
+
         div {
             padding-top: 20px;
+
+            a {
+                transition: all 5s;
+            }
+
+            a :hover {
+                box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+            }
+
         }
     }
 
@@ -269,6 +262,15 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+
+        a {
+            transition: all 5s;
+        }
+
+        a :hover {
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+        }
     }
 
 
@@ -287,8 +289,7 @@ body {
         margin: auto;
 
         .card {
-            width: 330px;
-            height: 430px;
+            @include sizes (330px,430px);
             background-color: #d7ecfa;
             border-radius: 8px;
             box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -354,15 +355,15 @@ body {
 
     .contacto {
         width: 100%;
-        display:flex ;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .inputContainer {
             width: 100%;
         }
-        
+
 
         .btn {
             background-color: #80d3f2;
@@ -396,8 +397,7 @@ body {
         margin-bottom: 40px;
 
         .promosBanco {
-            width: 16%;
-            height: 100%;
+            @include sizes (16%,100%);
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -419,9 +419,3 @@ body {
     }
 
 }
-
-
-
-
-
-

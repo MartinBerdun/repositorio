@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 footer {
     height: auto;
@@ -70,8 +71,7 @@ footer {
 
     .derechos {
         background-color: #EFE9EC;
-        width: 100%;
-        height: 40px;
+        @include sizes (100%,40px);
         padding: 10px;
         display: flex;
         justify-content: center;

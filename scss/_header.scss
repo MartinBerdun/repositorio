@@ -1,5 +1,6 @@
 
 @import "variables";
+@import "mixins";
 
 
 
@@ -8,8 +9,7 @@
     width: auto;
 
     .encabezado {
-        width: auto;
-        height: auto;
+        @include sizes (auto,auto);
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -34,8 +34,7 @@
     }
 
     .oferta {
-        width: 100%;
-        height: 50px;
+        @include sizes (100%,50px);
         display: flex;
         padding-top: 10px;
         justify-content: center;
