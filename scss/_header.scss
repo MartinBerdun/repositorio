@@ -5,7 +5,6 @@
 
 .primerSeccion {
     background-color: #bae2f6;
-    // background-image: linear-gradient(to bottom, white, $color-principal);
     width: auto;
 
     .encabezado {
@@ -47,28 +46,28 @@
         div {
             display: inline-block;
             margin: 0 0.5rem;
-        
             animation: heartBeat;
-            /* referring directly to the animation's @keyframe declaration */
             animation-duration: 2s;
             animation-iteration-count: infinite;
         }
     }   
 
     .menu {
-        // @extend .menuPrincipal;
         height: 40px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
 
         li {
+
+            a{
+                color: #0b6aaa;
+            }
             display: inline;
-            /* justify-content: center;
-            align-items: center; */
             padding: 10px 10px 10px 10px;
             margin: 10px 10px 10px 10px;
             font-family: Roboto-Regular;
+            color: #0b6aaa;
         }
     }
 
@@ -82,20 +81,21 @@
             text-align: center;
 
             li {
+                a {
+                    color: #0b6aaa;
+                }
                 display: inline;
                 padding: 10px;
                 margin: 5px 5px 5px 5px;
                 border: 2px solid #A9D3FF;
-
-                
             }
+
             & :hover {
 
                 border-radius: 5px;
                 background-image: linear-gradient(to left, white, #C4DCE9);
             }
         }
-
     }
 
 

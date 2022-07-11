@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logo_size_invert.jpg">
     <meta name="description" content="Sitio dedicado a la venta de ropa masculina">
-    <meta name="keywords" content="zapatillas, sneakers, ropa masculina, jeans, ropa, nike, adidas, jordan, venta de ropa, moda, moda masculina">
+    <meta name="keywords"
+        content="zapatillas, sneakers, ropa masculina, jeans, ropa, nike, adidas, jordan, venta de ropa, moda, moda masculina">
     <title>Contacate con St Marthin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -17,17 +18,17 @@
 <body>
 
     <section class="primerSeccion">
-            <nav class="menu">
-                <ul>
-                    <li> <a href="./index.html">Inicio</a></li>
-                    <li>Carrito</li>
-                    <li>Guardado</li>
-                    <li>Buscar</li>
-                </ul>
-            </nav>
+        <nav class="menu">
+            <ul>
+                <li> <a href="../index.html">Home</a></li>
+                <li>Carrito</li>
+                <li>Guardado</li>
+                <li>Buscar</li>
+            </ul>
+        </nav>
         <header class="encabezado">
 
-            <img class="logo" src="../img/logo_size_invert.jpg" alt="st marthin">
+            <a href="../index.html"><img class="logo" src="../img/logo_size_invert.jpg" alt="logo st marthin"></a>
             <div>
                 <p>
                     <h1>St Marthin</h1>
@@ -39,29 +40,34 @@
         </header>
         <nav class="menuPrincipal">
             <ul class="menuprincipal">
-                <li ><a href="../index.html">Inicio</a></li>
-                <li ><a href="../pages/productos.html" target="_blank">Productos</a></li>
-                <li > <a href="../pages/Preguntas frecuentes.html" target="_blank">Preguntas Frecuentes</a></li>
-                <li > <a href="../pages/quienes somos.html" target="_blank">Quienes somos</a></li>
-                <li > <a href="../pages/contacto.html" target="_blank">Contacto</a></li>
+                <li class="home"><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/productos.html" target="_blank">Productos</a></li>
+                <li> <a href="../pages/Preguntas frecuentes.html" target="_blank">Preguntas Frecuentes</a></li>
+                <li> <a href="../pages/quienes somos.html" target="_blank">Quienes somos</a></li>
+                <li> <a href="../pages/contacto.html" target="_blank">Contacto</a></li>
             </ul>
         </nav>
     </section>
 
     <main class="contacto container">
-        <h3>Contactanos!</h3>
-        <legend>Datos personales</legend>
+        <h3>Contáctanos!</h3>
+        <h4>Datos personales</h4>
         <form action="" method="get">
             <fieldset class="contacto1 ">
 
-                <div class="input-group input-group mb-3">
-                    <span class="input-group-text caja id=" inputGroup-sizing-default"">Nombre y Apellido</span>
-                    <input type="text" aria-label="First name" class="form-control">
-                    <input type="text" aria-label="Last name" class="form-control">
+                <div class="input-group mb-3 inputContainer">
+                    <span class="input-group-text caja" id="basic-addon1">Nombre</span>
+                    <input type="text" class="form-control" placeholder="Ingresá tu nombre" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3 inputContainer">
+                    <span class="input-group-text caja" id="basic-addon1">Apellido</span>
+                    <input type="text" class="form-control" placeholder="Ingresá tu apellido" aria-label="Username"
+                        aria-describedby="basic-addon1">
                 </div>
 
 
-                <div class="input-group mb-3">
+                <div class="input-group mb-3 inputContainer">
                     <label class="input-group-text caja" for="inputGroupSelect01">Edad</label>
                     <select class="form-select" id="inputGroupSelect01">
                         <option selected>Elige una opción</option>
@@ -71,7 +77,7 @@
                     </select>
                 </div>
 
-                <div class="input-group mb-3">
+                <div class="input-group mb-3 inputContainer">
                     <label class="input-group-text caja" for="inputGroupSelect01">Sexo</label>
                     <select class="form-select" id="inputGroupSelect01">
                         <option selected>Elige una opción</option>
@@ -80,17 +86,14 @@
 
                     </select>
                 </div>
-
-                <!-- <p class="contactoItem"><label for="email">Email</label> -->
-                    <div class="input-group mb-3">
-                        <span class="input-group-text caja" id="basic-addon1">Email</span>
-                        <input type="text" class="form-control" placeholder="Ingresa tu email" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                    </div>
-                </p>
+                <div class="input-group mb-3 inputContainer">
+                    <span class="input-group-text caja" id="basic-addon1">Email</span>
+                    <input type="text" class="form-control" placeholder="Ingresá tu email" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
             </fieldset>
 
-            <div class="comentarios">
+            <div class="comentarios inputContainer">
                 <div class="form-floating">
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                         style="height: 100px"></textarea>
@@ -102,10 +105,10 @@
                 <legend>Términos y condiciones</legend>
 
                 <input class="form-check-input" type="radio" name="terminos y condiciones" id="acepta" value="si">
-                <label class="form-check-label" for="acepta">Acepto terminos y condiciones.</label> <br>
+                <label class="form-check-label" for="acepta">Acepto términos y condiciones.</label> <br>
 
                 <input class="form-check-input" type="radio" name="terminos y condiciones" id="no acepta" value="no">
-                <label class="form-check-label" for="no acepta">No acepto terminos y condiciones</label> <br>
+                <label class="form-check-label" for="no acepta">No acepto términos y condiciones</label> <br>
 
             </fieldset>
 
@@ -139,15 +142,16 @@
                 <a href="https://www.instagram.com" target="blank"> <img src="../img/instagram32px.png"
                         alt="instagram"></a>
                 <a href="https://www.facebook.com" target="blank"><img src="../img/facebook32px.png" alt="facebook"></a>
-                <!-- <a href="https://www.whatsapp.com" target="blank"><img src="./img/whatsapp32px.png" alt="whatsapp"></a> -->
                 <a href="https://twitter.com" target="blank"><img src="../img/twitter32px.png" alt="twitter"></a>
             </div>
         </div>
 
         <div class="newslatter">
-            <p><h5>Suscribite al newsletter! </h5></p>
-            <input class="inputNews" type="email" placeholder="Ingresa tu email">
-            <button class="news" type="submit"> Suscribir </button>
+            <p>
+                <h5>Suscribite al newsletter! </h5>
+            </p>
+            <div><input class="inputNews" type="email" placeholder="Ingresá tu email">
+                <button class="news" type="submit"> Suscribir </button></div>
         </div>
 
 
@@ -156,6 +160,12 @@
             <h6>
                 St Marthin © 2022. Todos los derechos reservados.
             </h6>
+        </div>
+
+        <div class="whatsapp">
+            <a class="boton" href="https://www.whatsapp.com/?lang=es" target="_blank">
+                <img src="/img/whatsapp (3).png" alt="wpp">
+            </a>
         </div>
     </footer>
 

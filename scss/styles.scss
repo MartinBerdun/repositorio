@@ -45,6 +45,7 @@
 body {
     background-color: map-get($map: $colores, $key:septimo);
     width: auto;
+    font-family: Roboto-Regular;
 
     nav {
         font-family: Roboto-Regular;
@@ -177,7 +178,6 @@ body {
             flex-direction: row;
             justify-content: center;
             height: 100px;
-            // border: blue 2px solid;
             align-items: center;
 
 
@@ -186,11 +186,10 @@ body {
                 justify-content: center;
                 align-items: center;
                 background-color: #b1e2f4;
-                height: 80px;
+                height: 80%;
                 margin-top: 20px;
                 width: 100%;
                 text-align: center;
-                // border: red 2px solid;
 
                 p {
                     padding-top: 15px;
@@ -199,13 +198,8 @@ body {
                 h5 {
                     color: #0b6aaa;
                 }
-
             }
-
-
-
         }
-
     }
 
     .ofert {
@@ -215,44 +209,46 @@ body {
             grid-template-areas:
                 "posi1 posi2 "
             ;
-        }
 
-        .posi1 {
-            padding-left: 13%;
-        }
-
-        .posi2 {
-            padding-right: 7%;
-            display: grid;
-            grid-template-areas:
-                "ofer2 ofer3"
-                "ofer4 ofer5";
-        }
-
-        .photo {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-
-            a {
-                text-decoration: none;
-                color: black;
+            .posi1 {
+                padding-left: 13%;
+                grid-area: posi1;
             }
 
-
-            h5 {
-                text-align: center;
+            .posi2 {
+                padding-right: 7%;
+                grid-area: posi2;
+                display: grid;
+                grid-template-areas:
+                    "ofer2 ofer3"
+                    "ofer4 ofer5";
             }
 
-
-            h6 {
-                padding-top: 5px;
-                text-align: center;
+            .photo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+    
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+    
+    
+                h5 {
+                    text-align: center;
+                }
+    
+    
+                h6 {
+                    padding-top: 5px;
+                    text-align: center;
+                }
             }
         }
-
+        
     }
 
     .posi4 {
@@ -296,7 +292,6 @@ body {
             background-color: #d7ecfa;
             border-radius: 8px;
             box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-            // overflow: hidden;
             margin: 20px;
             text-align: center;
             transition: all 0.25s;
@@ -347,7 +342,6 @@ body {
 
 
     .comprass {
-        // border: red 1px solid;
         display: flex;
         align-items: center;
         height: 60px;
@@ -359,16 +353,20 @@ body {
     }
 
     .contacto {
-        // border: red solid 2px;
-        width: 60%;
+        width: 100%;
+        display:flex ;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        .inputContainer {
+            width: 100%;
+        }
+        
 
         .btn {
-            background-color: #3498db;
+            background-color: #80d3f2;
             margin: 2px;
-
-            & :hover {
-                transform: scale(1.25);
-            }
         }
 
         .caja {
@@ -405,10 +403,6 @@ body {
             box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
             margin: 20px;
             text-align: center;
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: center;
         }
 
         img {
@@ -422,10 +416,6 @@ body {
         .promo3 {
             width: 50px;
         }
-
-
-
-
     }
 
 }
